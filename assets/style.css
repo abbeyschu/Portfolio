@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --ColorDarkBlue: #28363D;
+    --ColorTeal: #2F575D;
+    --ColorGreen: #658B6F;
+    --ColorLightBlue: #6D9197;
+    --ColorTan: #dee1dd;
+}
+
+body {
+    background-color: var(--ColorDarkBlue);
+    color: var(--ColorTan);
+    
+}
+
+Header {
+    padding: 20px;
+    background-color: var(--ColorTeal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Monoton', cursive;
+    font-weight: normal;
+    font-size: 28pt;
+}
+
+Header nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+}
+
+Header nav ul li {
+    font-size: 14pt;
+    text-decoration: underline;
+    display: inline-block;
+    margin-left: 25px;
+    }
+
+H2 {
+    font-family: 'Monoton', cursive;
+    font-size: 24pt;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 16pt;
+}
+
+.Project p {
+    font-style: italic;
+}
+
+/* a normal, unvisited link */
+a:link {
+    color: var(--ColorTan);
+}
+
+/* a link the user has visited */
+a:visited {
+    color: var(--ColorDarkBlue);
+}
+
+/* a link when the user hovers over it */
+a:hover {
+    color: #cdb3d4;
+}
+
+/* a link the moment it is clicked */
+a:active {
+    color: var(--ColorLightBlue);
+}
+
+/* Settings for project links*/
+.Work a:link {
+    color: var(--ColorTan);
+    text-decoration: none;
+}
+
+.Work a:visited {
+    color: var(--ColorTan);
+}
+
+.Work a:hover {
+    color: var(--ColorTan);
+}
+
+.Work a:active {
+    color: var(--ColorTan);
+}
+
+
+.MainImage {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../assets/Images/leaves.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* center personal photo with oval border */
+.MainImage Img {
+    border-radius: 50%;
+    border-color: var(--ColorTan);
+    border-style: solid;
+    height: 200px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+.About {
+    background-color: var(--ColorGreen);
+    padding: 15px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.About p {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.Work {
+    background-color: var(--ColorGreen);
+    padding: 15px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.Contact {
+    background-color: var(--ColorGreen);
+    padding: 15px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.MainProject {
+    display: flex;
+}
+
+.OtherProjects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.trees {
+    background-image: url("../assets/Images/trees.jpg"); 
+    background-size: cover;
+    min-height: 200px;
+    margin: 20px;
+    width: 100%;
+}
+
+
+.water {
+    background-image: url("../assets/Images/water.jpg"); 
+    background-size: cover;
+    min-height: 200px;
+    margin: 20px;
+    width: 55%;
+}
+
+.palm {
+    background-image: url("../assets/Images/palm.jpg"); 
+    background-size: cover;
+    min-height: 200px;
+    margin: 20px;
+    width: 55%;
+}
+
+.plant {
+    background-image: url("../assets/Images/plant.jpg"); 
+    background-size: cover;
+    min-height: 200px;
+    margin: 20px;
+    width: 35%;
+}
+
+.flowers {
+    background-image: url("../assets/Images/flowers.jpg"); 
+    background-size: cover;
+    min-height: 200px;
+    margin: 20px;
+    width: 35%;
+}
+
+/* ensures projects 2-5 are on two lines */
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.Project {
+    background-color: var(--ColorLightBlue);
+    padding: 10px;
+    margin: 15px;
+}
+
+/* add a border when the mouse hovers over a project link */
+.Project:hover {
+    border-style: solid;
+    border-color: #cdb3d4;
+    border-width: 5px;
+}
+
+.ContactInfo {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 14pt;
+    padding: 15px;
+}
+
+/* increase side margins when screen is large */
+@media screen and (min-width: 1500px) {
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    }
+
+/* stack project sections when screen is small */
+@media screen and (max-width: 870px) {
+    .water{
+        width: 100%
+    }
+
+    .palm{
+        width: 100%;
+    }
+
+    .plant {
+        width: 100%;
+    }
+
+    .flowers {
+        width: 100%;
+    }
+}
