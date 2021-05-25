@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abbey Schueller Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
@@ -31,40 +33,31 @@
     <div id = "Work" class = "Work">
         <H2>Work</H2>
             <div class = "MainProject">
-                <section class = "trees">
-                    <a href="https://abbeyschu.github.io/RecipeSearchProject/">
-                    <div class = "Project">
+                <section class = "trees">>
+                    <div class = "Project" id="open1">
                     <h3>Recipe Finder</h3>
-                    <p>Food and cocktail recipe search project that uses multiple API calls</p>
+                    <p>Food recipe search engine with sign-up and login capabilities</p>
                     </div>
-                    </a>
                 </section>
             </div>
             <div class = "OtherProjects">
                 <section class = "water"> 
-                    <a href="https://abbeyschu.github.io/homework6_AS/">
-                    <div class = "Project">
+                    <div class = "Project" id="open2">
                     <h3>Weather Dashboard</h3>
                     <p>Search for a city to return current and forecasted weather data</p>
                     </div>
-                    </a>
                 </section>
                 <section class = "plant">  
-                    <a href="https://abbeyschu.github.io/homework5_AS/">
-                    <div class = "Project">
+                    <div class = "Project" id="open3">
                     <h3>Work Day Scheduler</h3>
                     <p>Enter items in time blocks and save to local storage</p>
                     </div>
-                    </a>
                 </section>
                 <section class = "break"></section>
                 <section class = "flowers"> 
-                    <a href="https://abbeyschu.github.io/homework4_AS/">
                     <div class = "Project">
-                    <h3>Code Quiz</h3>
-                    <p>Multiple Choice quiz using javascript</p>
+                    <h3>Placeholder project</h3>
                     </div>
-                    </a>
                 </section>
                 <section class = "palm"> 
                     <div class = "Project">
@@ -72,6 +65,63 @@
                     </div>
                 </section>
             </div>
+    </div>
+    <div id="allModals">
+        <div class="modal" id="modal1">
+          <div class="modal-background" id="background1"></div>
+          <div class="modal-card">
+            <p class="image is-3by2">
+              <img src="assets/Images/recipesignup.png" alt="recipe search signup page">
+            </p>
+    
+            <header class="modal-card-head">
+              <h2 class="modal-card-title title is-2">Recipe Finder</h2>
+              <button class="modal-close" aria-label="close" id="close1"></button>
+            </header>
+            <section class="modal-card-body">
+              <div class="modal-content">
+                <a href="https://github.com/abbeyschu/RecipeProject2"><p class="title is-3">GitHub Repository</p></a>
+                <a href="https://recipe-search-project.herokuapp.com/"><p class="title is-3">Deployed Link</p></a>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-background" id="background2"></div>
+            <div class="modal-card">
+              <p class="image is-3by2">
+                <img src="assets/Images/WeatherDashboard.png" alt="weather dashboard screenshot">
+              </p>
+              <header class="modal-card-head">
+                <h2 class="modal-card-title title is-2">Weather Dashboard</h2>
+                <button class="modal-close" aria-label="close" id="close2"></button>
+              </header>
+              <section class="modal-card-body">
+                <div class="modal-content">
+                  <a href="https://github.com/abbeyschu/homework6_AS"><p class="title is-3">GitHub Repository</p></a>
+                  <a href="https://abbeyschu.github.io/homework6_AS/"><p class="title is-3">Deployed Link</p></a>
+                </div>
+              </section>
+            </div>
+        </div>
+        <div class="modal" id="modal3">
+            <div class="modal-background" id="background3"></div>
+            <div class="modal-card">
+              <p class="image is-3by2">
+                <img src="assets/Images/SchedulerScreenshot.png" alt="Scheduler Screenshot">
+              </p>
+              <header class="modal-card-head">
+                <h2 class="modal-card-title title is-2">Work Day Scheduler</h2>
+                <button class="modal-close" aria-label="close" id="close3"></button>
+              </header>
+              <section class="modal-card-body">
+                <div class="modal-content">
+                  <a href="https://github.com/abbeyschu/homework5_AS"><p class="title is-3">GitHub Repository</p></a>
+                  <a href="https://abbeyschu.github.io/homework5_AS/"><p class="title is-3">Deployed Link</p></a>
+                </div>
+              </section>
+            </div>
+        </div>
     </div>
     <div id = "Contact" class = "Contact">
         <section>
@@ -84,5 +134,6 @@
         </section>
     </div>
     </main>
+    <script src="assets/script.js"></script>
 </body>
 </html>
